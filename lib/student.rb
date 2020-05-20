@@ -102,6 +102,7 @@ class Student
      sql = <<-SQL
       SELECT * FROM students 
       WHERE grade = 10
+      AND id = 1
       
     SQL
      DB[:conn].execute(sql)
