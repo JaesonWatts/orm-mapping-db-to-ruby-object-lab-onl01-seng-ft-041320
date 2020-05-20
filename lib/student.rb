@@ -80,8 +80,8 @@ class Student
   def self.students_below_12th_grade 
     sql = "SELECT * FROM students WHERE grade < 12"
     
-    all_under_12 = DB[:conn].execute(sql)
-    new_from_db(all_under_12)
+    DB[:conn].execute(sql)
+    
   end
   
   def self.first_X_students_in_grade_10(x) 
